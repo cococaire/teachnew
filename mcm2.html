@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mc2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <!-- https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_matem%C3%A1ticos#Teor%C3%ADa_de_conjuntos -->
+    
+  <style>
+  table, th, td {
+  border: 1px solid black;
+  color: gray;
+  border-collapse: collapse;
+  border-color: blue;}
+  
+  
+  #demov {
+    text-align: justify;
+    width: 60%;
+    
+    /*background-color: powderblue;*/
+  }
+  
+  body {
+  font-family: verdana;
+  font-size: 13px;
+}
+input {
+  width: 25%;
+}
+
+  </style>
+
+</head>
+<body>
+
+<!-- a ∈ S significa: a es elemento del conjunto S; a ∉ S significa: a no es elemento del conjunto S -->
+<!-- a ∈ S significa: a es elemento del conjunto S; a ∉ S significa: a no es elemento del conjunto S -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MENU</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <!--<li><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard</a></li> -->
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-A<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		    <!-- <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> -->
+			<!-- <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> -->
+            <li><a href="#"> Teoría de conjuntos</a></li>
+            <li><a href="#">Números naturales</a></li>
+            <li><a href="#">Operaciones sencillas</a></li>
+			<li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-B <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">New Contact</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-C <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Notiz</a></li>
+            <li><a href="#">Notebooks</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Accounts</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learnings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Learning</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Entry</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Topics</a></li>
+          </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.google.ch" target="_blank">My Webmail</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.google.ch" target="_blank">Timelogger</a></li>
+            <li><a href="http://www.cubetech.ch" target="_blank">cubetech.ch</a></li>
+         </ul>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Jack Bass<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.fgruber.ch/" target="_blank"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> User Settings</a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
+         </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--  Desarrollo mcm -->
+
+<div class="jumbotron text-center">
+  <h2>Aprenda Matemática desde cero</h2>
+  <h3>Factorizar n&uacute;meros</h3> 
+</div>
+
+
+<div class="container">
+    <div class="row">
+	
+          
+    <div class="col-sm-8">
+		   <div id="demov">
+		    <form> ""
+			<label for="fname">Ingrese n&uacute;mero</label>
+		    <input type="number" id="fname" name="fname" min="2" max="200" size="2"autofocus value = "">
+			<br><br>
+			
+			<button type="button" onclick="limpiar()">Restaurar</button>
+			<button type="button" onclick="determinar_primos()">Calcular</button>
+			</form>
+			<br>
+			 
+            <p id="demo"></p>
+	            
+			<p id="demo1"></p>
+			
+			<p id="demo2"></p>
+			
+			<p id="demo3"></p>
+			
+			<p id="demo4"></p>
+			
+			<p id="demo5"></p>
+			
+			<p id="demo6"></p>
+			
+			<table id="myTable" >
+                      
+            </table>
+			
+          </div>
+    </div>
+	
+        
+    </div>
+</div>
+
+
+<script>
+function determinar_primos() {
+
+var d = document.getElementsByTagName("input")[0].value;
+const elementos = d;
+const primos = [];
+//-------------------------------------
+ 
+ var resto = 0;
+ var cociente = [];
+ var co = 0;  
+ var factor = [];
+ var i = 0;
+ var j = 0;
+
+for(let candidato = 2; candidato <= elementos; candidato++) {
+    let primo = true;
+    for(let divisor=2; divisor < candidato; divisor++) {
+        //iteraciones++;
+        if(candidato%divisor === 0) {
+            primo = !primo;
+            break;
+        }
+    }
+    if(primo) {primos.push(candidato)};
+}
+document.getElementById("demo").innerHTML = "<b>Todos los Numeros Primos menores que </b>" + d;
+
+var text = "";
+var a = 0;
+fLen = primos.length;
+for (i = 0; i < fLen; i++) {
+  a = primos[i];
+  text += a + " / ";
+  
+ }
+
+
+document.getElementById("demo1").innerHTML = text;
+document.getElementById("demo2").innerHTML = "<b>Descomponer el numero </b>" + d + " en sus factores primos";
+  /// calculo de los factores primos contenidos en el array primos
+var c = primos.length;
+//document.getElementById("demo3").innerHTML =  c;
+
+//resto = d % primos[j];
+//co=d/primos[j];
+
+while ( j <= c) {
+resto = d % primos[j];
+
+if (resto === 0) {
+co=d/primos[j];
+cociente.push(co);
+factor.push(primos[j]);
+d = co;
+
+}
+else
+{j++;}
+
+}
+factor.push("-");
+cociente.unshift(elementos);
+
+
+
+
+//-----------------------------------------------------
+//document.getElementById("demo5").innerHTML = factor;
+x = cociente.length;
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "&&&&&&&";
+  cell2.innerHTML = "&&&&&&&";
+  
+  for (j=x-1; j >= 0; j--) {
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = cociente[j];
+  cell2.innerHTML = factor[j];
+  }
+  //  escribe el numero d en la multiplicacion de valores primos   rutina linea 251 hasta 270
+  factor.pop();
+  var a = 0;
+  var text = " ";
+  fLen = factor.length;
+  
+  for (i = 0; i < fLen; i++) {
+  a = factor[i];
+  text += a + " x ";
+  }
+  
+  text = text.substring(0, text.length - 3);
+  text = elementos + " = " + text;
+  
+  document.getElementById("demo6").innerHTML = text;
+  
+  
+// para copiar { }   []
+
+//  llave que cierra la funcion
+}
+
+function limpiar() {
+//document.getElementById("fname").onclick = function() {
+  var input = document.getElementById("fname");
+  input.focus();
+ 
+  //var val = input.value;
+  //input.value = '';
+  //input.value = val;
+}
+
+</script>
+
+</body>
+
+
+</html>

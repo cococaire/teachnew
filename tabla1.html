@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tabla1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <!-- https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_matem%C3%A1ticos#Teor%C3%ADa_de_conjuntos -->
+    
+  <style>
+  table, th, td {
+  border: 1px solid black;
+  color: gray;
+  border-collapse: collapse;
+  border-color: blue;}
+  </style>
+ 
+ 
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+	
+	    <div class="col-sm-4">
+		    <button onclick="myFunction()">ejecutar</button>
+			
+			<table id="myTable" >
+                    <!--<tr>
+                        <td>.</td>
+                        <td>.</td>
+                    </tr>-->
+  
+            </table>
+              
+        </div>
+	
+        
+    </div>
+</div>
+
+
+<script>
+var cociente = [16,8,4,2,1];
+x = cociente.length;
+var mcm = [2,2,2,2,"-"];
+
+function myFunction() {
+  var table = document.getElementById("myTable");
+  //for (j=0; j <=x -1; j++) {
+  for (j=x-1; j >= 0; j--) {
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = cociente[j];
+  cell2.innerHTML = mcm[j];
+  }
+}  
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the formatted number.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  
+  var d = 20;
+  var text = " ";
+  //var flen = 0;
+  factor = [2,2,5];
+  fLen = factor.length;
+  
+  for (i = 0; i < fLen; i++) {
+  a = factor[i];
+  text += a + " x ";
+  }
+  
+  text = text.substring(0, text.length - 3);
+  text = d + " = " + text;
+  
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

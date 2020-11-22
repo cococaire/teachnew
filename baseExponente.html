@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+</html>
+<body>
+<div>
+<h2>JavaScript Arrays</h2>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3">km<sup>2</sup></p>
+<p id="demo4">E = X<sup>4</sup></p>
+
+</div>
+
+<script>
+// este programa a partir de un factorial crea dos array uno con los factore primos y otro con las cantidades de cada factor primos
+// de tal manera que permite realiza el claculo con math.pow()
+const factor = [1,1,2,2,2,2,2,3,3,3,4,4,5,6];
+document.getElementById("demo").innerHTML = factor;
+
+
+const unicos = [];
+var exponente = [];
+potencia = 0;
+var z = 0;
+
+for(var i = 0; i < factor.length; i++) {
+ 
+  const elemento = factor[i];
+ 
+  if (!unicos.includes(factor[i])) {
+    unicos.push(elemento);
+  }
+}
+
+
+  
+document.getElementById("demo1").innerHTML = unicos;
+
+
+
+
+for(var i = 0; i < unicos.length; i++) {
+  z = 0;
+  //const elemento = unicos[i];
+  
+  for(var j = 0; j < factor.length; j++) {
+          
+         if (unicos[i] === factor[j]) {
+		 z++;
+		 }
+ 
+  }
+  exponente.push(z); 
+  
+}
+
+document.getElementById("demo2").innerHTML = exponente;
+
+// construye la potencias en funcion de los array   unico y  exponente
+  //var r = <sup>;
+  //var p = </sup>;
+  //var text =  "coco "; 
+ for(var i = 0; i < unicos.length; i++) {
+   var z = unicos[i].tostring(); 
+   var e = exponente[i].tostring();
+   //text + = "z + e.sup()" ;
+   text += z.<sup> e </sup>;
+
+ }         
+ 
+
+document.getElementById("demo3").innerHTML = text;
+
+
+</script>
+
+<body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

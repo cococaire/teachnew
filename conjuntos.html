@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conjuntos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <!-- https://es.wikipedia.org/wiki/Anexo:S%C3%ADmbolos_matem%C3%A1ticos#Teor%C3%ADa_de_conjuntos -->
+    
+  <style>
+   
+  </style>
+
+</head>
+<body>
+
+<!-- a ∈ S significa: a es elemento del conjunto S; a ∉ S significa: a no es elemento del conjunto S -->
+<!-- a ∈ S significa: a es elemento del conjunto S; a ∉ S significa: a no es elemento del conjunto S -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MENU</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <!--<li><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard</a></li> -->
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-A<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		    <!-- <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> -->
+			<!-- <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> -->
+            <li><a href="#"> Teoría de conjuntos</a></li>
+            <li><a href="#">Números naturales</a></li>
+            <li><a href="#">Operaciones sencillas</a></li>
+			<li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-B <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">New Contact</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-C <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Notiz</a></li>
+            <li><a href="#">Notebooks</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Accounts</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learnings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Learning</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Entry</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Topics</a></li>
+          </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.google.ch" target="_blank">My Webmail</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.google.ch" target="_blank">Timelogger</a></li>
+            <li><a href="http://www.cubetech.ch" target="_blank">cubetech.ch</a></li>
+         </ul>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Jack Bass<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.fgruber.ch/" target="_blank"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> User Settings</a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
+         </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--  Desarrollo de conjuntos -->
+
+<div class="jumbotron text-center">
+  <h2>Aprenda Matemática desde cero</h2>
+  <h3>Teoría de conjuntos</h3> 
+</div>
+
+
+<div class="container">
+    <div class="row">
+	
+        <div class="col-sm-2"></div>
+	
+        <div class="col-sm-8">
+            <h4>&iquest; A que llamamos conjunto en matemáticas ?</h4>
+	  
+            <p>En Matemáticas llamamos conjunto a una colección de objetos bien definido.</p>
+            <p>Por ejemplo defino un conjunto con los colores del arco iris</p>
+			<p>Los colores del arcoiris son siete.</p>
+			<ul>
+			<li>Rojo</li>
+			<li>Naranja</li>
+			<li>Amarillo</li>
+			<li>Verde</li>
+			<li>Azul</li>
+			<li>Añil</li>
+			<li>Violeta</li>
+			</ul>
+			
+            <p>Entonces escribo:<br>  <b>A</b> = {Rojo, Naranja, Amarillo, Verde, Azul, Añil, Violeta} <br> con lo cual queda definido <b>matemáticamente 
+			   el conjunto</b>  <b>A</b><br> 
+					 
+			</p>
+			<!--<img src="img/d2.png" alt="Diagrama de Venn" width="319" height="267">-->
+			<figure class="center-block">
+			<img class="img-responsive" src="img/d2.png" alt="Diagrama de Venn">
+			<figcaption>Diagrama de Venn</figcaption>
+			</figure>
+        </div>
+	
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

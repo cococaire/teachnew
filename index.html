@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Matematicas desde cero</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  
+  <style>
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MENU</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <!--<li><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Dashboard</a></li> -->
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-A<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+		    <!-- <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> -->
+			<!-- <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> -->
+            <li><a href="file:///C:/wamp/www/public_html/ense%C3%B1ar/conjuntos.html#"> Teoría de conjuntos</a></li>
+            <li><a href="#">Números naturales</a></li>
+            <li><a href="#">Operaciones sencillas</a></li>
+			<li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-B <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Übersicht</a></li>
+            <li><a href="#">New Contact</a></li>
+            <li><a href="#">Categories</a></li>
+			<li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temas-C <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Notiz</a></li>
+            <li><a href="#">Notebooks</a></li>
+			<li role="separator" class="divider"></li>
+          </ul>
+        </li>
+        <li><a href="#">Accounts</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learnings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Learning</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Entry</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Topics</a></li>
+          </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.google.ch" target="_blank">My Webmail</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.google.ch" target="_blank">Timelogger</a></li>
+            <li><a href="http://www.cubetech.ch" target="_blank">cubetech.ch</a></li>
+         </ul>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Jack Bass<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.fgruber.ch/" target="_blank"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> User Settings</a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
+         </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="jumbotron text-center">
+  <h2>Aprenda Matemática desde cero</h2>
+  <h3>Bienvenidos</h3> 
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Objetivo del curso</h3>   
+      <p>Este curso está destinado para los alumnos que terminan la escuela primaria y que pasan a la escuela secundaria</p>
+      <p>Vamos a <b>repasar</b> todos los conceptos matemáticos más elementales, <b>generalmente mal aprendidos</b>, y  que son los fundamentos 
+	     de todo el aprendizaje posterior que exige la escuela secundaria y posteriormente la universidad.
+		 
+		 
+	  
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Bases Sólidas</h3>
+      <p>Si vás a construir un casa para una familia o un edificio que tenga muchos pisos, lo primero que van a diseñar los arquitectos e ingenieros
+	     son las <b>bases sólidas</b> que van a soportar toda la construcción que se va hacer sobre ellas.<br>
+		 
+		 Si la base del edificio está mal diseñada
+		 se corre el peligro que toda la construcción tenga problemas posteriores o se derrumbe.<br>
+		 
+		 Lamentablemente eso es lo que pasa con la enseñanza de la matemática.<br>
+		 Los alumnos no aprenden bien lo <b>básico</b> ,  entonces terminan odiando lo que es un placer,  <b>aprender matemáticas como un divertimiento.</b><br>
+	  
+	  </p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Funcionamiento del curso</h3>        
+      <p>El curso es <b>gratuito</b> y está destinado para los alumnos de habla hispana.<br>
+	     Contiene muchísima <b>ejercitación</b> que es primordial para afianzar los conocimientos adquiridos.<br>
+		 También hay <b>videos</b> cuando la complejidad del concepto matemático lo requiera.<br>
+	  </p>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
